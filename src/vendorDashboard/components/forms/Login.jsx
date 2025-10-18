@@ -36,8 +36,9 @@ const Login = ({showWelcomeHandlerClick}) => {
       const vendorId = data.vendorId;
       console.log('checking for vendorid', vendorId);
       if (vendorId) {
-        const vendorResponse = await fetch(`${API_URL}/vendor/vendorDetails/${vendorId}`);
+        const vendorResponse = await fetch(`${API_URL}vendor/vendorDetails/${vendorId}`);
         if (vendorResponse.ok) {
+
           const vendorData = await vendorResponse.json();
           const vendorFirmId = vendorData.vendorFirmId || (vendorData.vendor && vendorData.vendor.firm && vendorData.vendor.firm.length > 0 ? vendorData.vendor.firm[0]._id : null);
           console.log('checking for firmId', vendorFirmId);
@@ -55,7 +56,7 @@ const Login = ({showWelcomeHandlerClick}) => {
           // schedule reload after 10 seconds so UI updates after login
           setTimeout(() => {
             window.location.reload();
-          }, 100);
+          }, 10);
         } 
         else {
           const txt = await vendorResponse.text();
@@ -63,16 +64,16 @@ const Login = ({showWelcomeHandlerClick}) => {
           // still schedule a reload to apply token state
           setTimeout(() => {
             window.location.reload();
-          }, 100);
+          }, 10);
         }
       } else {
         // no vendorId returned; schedule reload to apply token state
         setTimeout(() => {
           window.location.reload();
-        }, 100);
+        }, 10);
       }
     } catch (error) {
-      console.error(error);
+      // console.error(error);
       alert(" login failed", error);
     }
   }

@@ -102,7 +102,7 @@ const AddProduct = () => {
                    }
          }
       } catch (error) {
-         // console.error(data.message);
+         console.error(data.message);
          console.error("Error adding product ",error)
          alert("failed to add product");
       }
