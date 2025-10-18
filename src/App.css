@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    /* font-family: "Carrois Gothic SC", sans-serif; */
+
+}
+
+.welcome{
+    margin-left: 150px;
+}
+
+.navSection{
+    /* border:1px solid black; */
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.sideBarSection{
+    /* border: 1px solid black; */
+    width: 180%;
+    max-width: 250%;
+    height: 95vh;
+    padding-top: 10px;
+    background-color: lightgrey;
+}
+
+.sideBarSection ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: medium;
+    cursor: pointer;
+    
+}
+
+.collectionSection{
+    display: flex;
+}
+
+.loginSection{
+    /* border: 1px solid black; */
+    width: 100vh;
+    /* height: 96vh; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 98px;
+    align-items: center;
+
+}
+
+.loginSection input{
+    margin-top: 5px;
+}
+
+.registerSection{
+     /* border: 1px solid black; */
+    width: 100vh;
+    /* height: 96vh; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 120px;
+    align-items: center;
+
+}
+
+.registerSection input{
+    margin-top: 5px;
+}
+
+.header{
+    color: #e09600;
+}
+.authForm{
+    width: 180px;
+    max-width: 250px;
+    border: 1px solid black;
+    margin: 50px;
+    padding: 20px;
+    padding-right: 200px;
+    border-radius: 15px;
+    box-shadow: -9px -2px 13px 0px rgba(0,0,0,0.68);
+-webkit-box-shadow: -9px -2px 13px 0px rgba(0,0,0,0.68);
+-moz-box-shadow: -9px -2px 13px 0px rgba(0,0,0,0.68);
+    
+
+}
+/* 
+.authForm label{
+    border: 1px solid black;
+    width: 100px ;
+    max-width: 55px;
+} */
+
+
+.authForm h3{
+    padding-left: 50px;
+    text-align: center;
+    
+}
+.authForm input{
+    width: 200%;
+    margin-bottom:20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.firmSection{
+    border: 1px solid black;
+    width: 100vh;
+    height: 80vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    margin-left: 160px;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: -9px -2px 13px 0px rgba(0,0,0,0.68);
+-webkit-box-shadow: -9px -2px 13px 0px rgba(0,0,0,0.68);
+-moz-box-shadow: -9px -2px 13px 0px rgba(0,0,0,0.68);
+
+}
+
+.restroForm{
+    width: 180px;
+    max-width: 250px;
+    margin-left:30px;
+    padding: 0px;
+    align-items: start;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    font-weight: 500;
+    border: 1px sold black;
+    
+
+
+}
+
+.restroForm h2{
+    padding-left: 60px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.restroForm input{
+    width: 200%;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-bottom:20px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-weight: 600;
+    
+}
+
+/* check box inputs */
+
+.checkInp{
+    /* border: 1px solid black; */
+    width: 170%;
+    max-width: 170%;
+    /* display: flex; */
+}
+
+.inputBoxContainer{
+    /* border: 1px solid rgb(43, 18, 139); */
+    display: flex;
+    width: 86%;
+    max-width: 135%;
+    /* padding: 10px; */
+    
+}
+
+.checkboxContainer{
+    /* border:1px solid black; */
+    display: flex;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+.checkboxContainer label{
+    padding-left: 20px;
+    padding-right: -5px;
+}
+
+.checkboxContainer input{
+    margin-left: 3px;
+    width: 25px;
+}
+
+
+/* products table */
+
+.productLoading{
+     margin-left: 150px;
+     margin-top: 50px;
+}
+
+.product-table{
+    border: 2px solid black;
+    margin-left: 150px;
+    width: 75vw;
+    /* max-width: 80vw; */
+    border-collapse: collapse;
+    margin-top: 50px;
+    box-shadow: -9px -2px 13px 0px rgba(0,0,0,0.68);
+-webkit-box-shadow: -9px -2px 13px 0px rgba(0,0,0,0.68);
+-moz-box-shadow: -9px -2px 13px 0px rgba(0,0,0,0.68);
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid gray;
+    padding: 10px;
+    padding-right: 50px;
+
+}
+
+.product-table th{
+    text-align: left;
+    background-color: gray;
+}
+
+/* not found */
+.errorSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.errorSection h1{
+    font-size: 4rem;
+}
+ 
+.btnSubmit button{
+    background-color: #e09600;
+    width: 5rem;
+    padding: 5px 0;
+    font-size: medium;
+    
+}
