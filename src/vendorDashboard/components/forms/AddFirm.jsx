@@ -73,7 +73,7 @@ const handlerFirmSubmit = async(e)=>{
             formData.append("image", image);
          }
 
-         const response = await fetch(`${API_URL}/firm/add-firm`,{
+         const response = await fetch(`${API_URL}firm/add-firm`,{
             method:"POST",
             headers:{
                'token': `${loginToken}`

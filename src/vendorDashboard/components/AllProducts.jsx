@@ -13,7 +13,7 @@ const AllProducts = () => {
         return;
       }
       try {
-        const response = await fetch(`${API_URL}/product/products/${firmId}`);
+        const response = await fetch(`${API_URL}product/products/${firmId}`);
         const newProductsData = await response.json();
         if (!response.ok) {
           console.error('failed to fetch products', newProductsData);
@@ -49,7 +49,7 @@ const AllProducts = () => {
 
     const deleteProductById = async(productId)=>{
       try {
-        const response = await fetch(`${API_URL}/product/${productId}`,{
+        const response = await fetch(`${API_URL}product/${productId}`,{
           method:'DELETE'
         })
         if(response.ok){

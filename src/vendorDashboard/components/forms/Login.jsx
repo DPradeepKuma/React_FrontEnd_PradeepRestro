@@ -9,7 +9,7 @@ const Login = ({showWelcomeHandlerClick}) => {
   const loginHandler = async(e)=>{
     e.preventDefault();
     try {
-      const response = await fetch(`${API_URL}/vendor/login`,{
+      const response = await fetch(`${API_URL}vendor/login`,{
         method:"POST",
         headers:{
           "Content-Type": "application/json"

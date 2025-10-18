@@ -77,7 +77,7 @@ const AddProduct = () => {
       // backend expects field name 'bestSeller' (see productController)
       formData.append('bestSeller', String(bestseller));
 
-         const response = await fetch(`${API_URL}/product/add-product/${firmId}`,{
+         const response = await fetch(`${API_URL}product/add-product/${firmId}`,{
             method: "POST",
             body: formData
          })

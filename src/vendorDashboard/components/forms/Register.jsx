@@ -15,7 +15,7 @@ const Register = ({showLoginHandlerClick}) => {
 const handelSubmit = async(e)=>{
   e.preventDefault();
   try {
-    const response = await fetch(`${API_URL}/vendor/register`,{
+    const response = await fetch(`${API_URL}vendor/register`,{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
@@ -34,7 +34,7 @@ const handelSubmit = async(e)=>{
       showLoginHandlerClick();
     }
   } catch (error) {
-    console.error( error);
+    // console.error( error);
     alert(" registration failed", error);
     
   }
